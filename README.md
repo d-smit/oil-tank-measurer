@@ -1,9 +1,12 @@
 # oil-tank-measurer
 
-This is a work in progress project exploring the possibility of estimating oil tank capacites through images alone. Using Python with NumPy and OpenCV, it is possible to measure the shadows inside and outside an oil tank. Using knowledge of the sensor resolution, we can calculate tank geometries and shadow lengths. With this information, it should be possible to estimate the height of the internal oil tank, i.e. the tank that contains the oil, and when comparing to the full volume, based on the external cylinder structure, we can estimate the capacity in barrels of oil.
+This is a work in progress project exploring the possibility of estimating oil tank capacites through images alone, by considering the shadows inside and outside an oil tank. Using Python with NumPy and OpenCV, it is possible to measure these shadows. With knowledge of the sensor resolution, we can use these measurements with the tank geometries to estimate current oil capacity. 
+
+We implement this for a refinery in Cushing, Oklahoma, seen below. 
 
  ![](storage_tanks_2.jpg)
 
 ## To Do
  
+- Finalise storage calculation. 
 - Explore Hough transforms for tank radius calculation.
